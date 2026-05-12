@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DATA GIZI IBU HAMIL | Puskesmas Gonegati</title>
+    <title>DATA GIZI IBU HAMIL | Puskesmas Gonenggati Donggala</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Tambahkan library Google Charts untuk Diagram -->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -51,21 +51,30 @@
     <!-- Header App -->
     <header class="bg-puskesmas text-white shadow-md">
         <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
-            <div>
-                <h1 class="text-xl md:text-2xl font-bold tracking-wide">DATA GIZI IBU HAMIL</h1>
-                <p class="text-xs md:text-sm text-green-100 mt-1">Puskesmas Gonegati, Kab. Donggala</p>
+            <div class="flex items-center space-x-3">
+                <!-- Tambahan Logo Puskesmas -->
+                <div class="flex-shrink-0 bg-white rounded-full p-1 shadow-sm flex items-center justify-center h-12 w-12 md:h-14 md:w-14">
+                    <img src="https://i.ibb.co.com/WWqZhH1C/Logo-Gonenggati-png2.png" alt="Logo Gonenggati" class="h-full w-full object-contain" border="0">
+                </div>
+                <div>
+                    <h1 class="text-xl md:text-2xl font-bold tracking-wide leading-tight">DATA GIZI IBU HAMIL</h1>
+                    <p class="text-xs md:text-sm text-green-100">Puskesmas Gonenggati Donggala</p>
+                </div>
             </div>
-            <!-- Tombol Login Admin (Terlihat di Form Input) -->
-            <button id="btnShowLogin" onclick="openLoginModal()" class="flex items-center text-sm bg-white text-puskesmas px-3 py-2 rounded-lg font-semibold hover:bg-green-50 transition shadow-sm">
-                <svg class="w-4 h-4 mr-1 md:mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8V7a4 4 0 00-8 0v4h8z"></path></svg>
-                <span class="hidden md:inline">Login Admin</span>
-                <span class="md:hidden">Admin</span>
-            </button>
-            <!-- Tombol Logout Admin (Terlihat di Dashboard) -->
-            <button id="btnLogout" onclick="logoutAdmin()" class="hidden flex items-center text-sm bg-red-500 text-white px-3 py-2 rounded-lg font-semibold hover:bg-red-600 transition shadow-sm">
-                <svg class="w-4 h-4 mr-1 md:mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg>
-                Keluar
-            </button>
+            
+            <div class="flex items-center space-x-2">
+                <!-- Tombol Login Admin (Terlihat di Form Input) -->
+                <button id="btnShowLogin" onclick="openLoginModal()" class="flex items-center text-sm bg-white text-puskesmas px-3 py-2 rounded-lg font-semibold hover:bg-green-50 transition shadow-sm">
+                    <svg class="w-4 h-4 mr-1 md:mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8V7a4 4 0 00-8 0v4h8z"></path></svg>
+                    <span class="hidden md:inline">Login Admin</span>
+                    <span class="md:hidden">Admin</span>
+                </button>
+                <!-- Tombol Logout Admin (Terlihat di Dashboard) -->
+                <button id="btnLogout" onclick="logoutAdmin()" class="hidden flex items-center text-sm bg-red-500 text-white px-3 py-2 rounded-lg font-semibold hover:bg-red-600 transition shadow-sm">
+                    <svg class="w-4 h-4 mr-1 md:mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg>
+                    Keluar
+                </button>
+            </div>
         </div>
     </header>
 
